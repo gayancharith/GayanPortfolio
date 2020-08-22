@@ -1,0 +1,50 @@
+@import "../../theme/variables";
+
+.progress {
+  height: 160px;
+  width: 160px;
+  background-color: $black;//rgba(0,0,0,.075);;
+  display: block;
+  line-height: unset;
+  margin: 0 auto;
+
+  svg {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.progress-circle {
+  transform: rotate(-90deg);
+  margin-top: -40px;
+}
+
+.progress-circle-back {
+  fill: none;
+  stroke: $gray;
+  stroke-width: 8px;
+}
+
+.progress-circle-prog {
+  fill: none;
+  stroke: $primary-color;
+  stroke-width: 8px;
+  stroke-dasharray: 0 999;
+  stroke-dashoffset: 0px;
+  transition: stroke-dasharray 0.7s linear 0s;
+}
+
+.progress-text {
+  text-align: center;
+  font-size: 16px;
+  line-height: 0.5;
+  margin-top: -58%;
+}
+
+.progress-icon {
+  position: absolute;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    font-size: 45px;
+}

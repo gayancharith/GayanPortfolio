@@ -1,0 +1,9 @@
+<a class="site-button" (click)="emitClickEvent($event)">
+  <span>{{text}}</span>
+  <ng-template [ngIf]="showIcon">
+    <svg width="13px" height="10px" viewBox="0 0 13 10">
+      <path d="M1,5 L11,5"></path>
+      <polyline points="8 1 12 5 8 9"></polyline>
+    </svg>
+  </ng-template>
+</a>

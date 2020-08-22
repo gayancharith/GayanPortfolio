@@ -1,0 +1,112 @@
+/* You can add global styles to this file, and also import other style files */
+@import "app/theme/variables.scss";
+@import "app/theme/scrollbar.mixin.scss";
+@import "app/theme/font.mixin.scss";
+@import "app/theme/animation.scss";
+
+html,
+body {
+  height: 100%;
+  background: $background-color;
+  color: $white;
+  margin: 0;
+  // font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  // font-family: "Rubik", sans-serif;
+  font-family: "Biotif", Arial, sans-serif;
+  @include scrollbars(2px, $gray, $black);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "AbrilTitlingW04";
+  // font-family: "EsmeraldaPro";
+  font-weight: 700;
+}
+
+button {
+  &:focus {
+    outline: none;
+  }
+}
+
+.btn {
+  font-size: $font-size-small !important;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $white;
+  background-color: $gray;
+  border: 1px solid;
+
+  &:hover {
+    color: $white;
+    opacity: 0.7;
+  }
+}
+
+.site-container {
+  background-color: $background-color;
+  height: 100%;
+  padding: 6rem 10rem;
+  // opacity: 0.8;
+
+  @media only screen and (max-width: 1200px) and (min-width: 768px) {
+    padding: 6rem 5rem;
+  }
+
+  @media (max-width: 736px) {
+    padding: 5rem 3rem;
+  }
+}
+
+.special-text {
+  color: $primary-color !important;
+}
+
+.site-heading {
+  @include fontSize(70px);
+  text-transform: capitalize;
+  margin-bottom: 3rem;
+  font-weight: 600;
+
+  @media (max-width: 1200px) {
+    @include fontSize(45px);
+  }
+
+  @media only screen and (max-width: 991px) and (min-width: 768px) {
+    @include fontSize(42px);
+  }
+
+  .heading-transparent {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+  }
+
+  .heading-color {
+    color: $primary-color;
+  }
+}
+
+.site-sub-heading {
+  margin: 2rem 0;
+  font-weight: 700;
+}
+
+.site-special-heading {
+  text-transform: capitalize;
+}
+
+.special-heading-indicator {
+  position: absolute;
+  height: 22px;
+  width: 4px;
+  content: "";
+  background: $primary-color;
+}
+
+.special-heading-text {
+  margin-left: 1rem;
+}

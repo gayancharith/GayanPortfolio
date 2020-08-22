@@ -1,0 +1,15 @@
+<div class="progress">
+  <svg class="progress-circle" xmlns="http://www.w3.org/2000/svg">
+    <circle class="progress-circle-back" cx="80" cy="80" r="70"></circle>
+    <circle class="progress-circle-prog progress-circle-prog-{{id}}" cx="80" cy="80" r="70"
+      [ngStyle]="{'strokeDasharray': strokeDashArray}">
+    </circle>
+  </svg>
+  <div class="progress-text" data-progress="0">
+    <p>{{label}}</p>
+    <p *ngIf="showPercentageText">{{percentage}}%</p>
+  </div>
+  <div *ngIf="iconClass" class="progress-icon">
+    <i class="fa" [ngClass]="iconClass"></i>
+  </div>
+</div>

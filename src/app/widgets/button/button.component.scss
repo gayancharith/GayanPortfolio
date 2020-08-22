@@ -1,0 +1,63 @@
+@import "../../theme/variables.scss";
+@import "../../theme/font.mixin.scss";
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.site-button {
+  position: relative;
+  margin: auto;
+  padding: 13px 19px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  @include fontSize(14px);
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 28px;
+    border: 2px solid $primary-color;
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+  }
+
+  span {
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    vertical-align: middle;
+  }
+
+  svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: $white;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+  }
+
+  &:hover {
+    &:before {
+      width: 100%;
+      background: rgba($primary-color, 1);
+    }
+    svg {
+      transform: translateX(0);
+    }
+  }
+  &:active {
+    transform: scale(0.96);
+  }
+}

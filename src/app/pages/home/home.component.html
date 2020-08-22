@@ -1,0 +1,21 @@
+<section id="home" class="site-home fade-in">
+  <div class="color-triangle d-none d-lg-block"></div>
+  <!-- <div class="color-triangle-white d-none d-lg-block"></div> -->
+
+  <div class="overlay">
+    <div class="col-lg-7 overlay-content slide-in-bottom">
+      <div class="overlay-heading">
+        <h4 class="special-text">Hi, I am</h4>
+        <h1>{{about?.name}}</h1>
+        <h5 class="special-text">{{about?.profession}}</h5>
+      </div>
+
+      <p class="mt-4">{{about?.description}}</p>
+      <div class="my-5 overlay-footer">
+        <site-button [text]="'Descover More'" [showIcon]="true" (clickEvent)="handleButtonClick('/skills')">
+        </site-button>
+        <site-button [text]="'Contact Me'" [showIcon]="true" (clickEvent)="handleButtonClick('/contact')"></site-button>
+      </div>
+    </div>
+  </div>
+</section>

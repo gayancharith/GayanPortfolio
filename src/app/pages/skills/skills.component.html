@@ -1,0 +1,157 @@
+<section id="expertises" class="site-skills">
+  <div class="site-container slide-in-bottom">
+    <div class="row">
+      <div class="col-lg-6">
+        <h2 class="site-heading">
+          <span class="heading-transparent">Something</span>
+          <span class="heading-color"> know</span><br> about me
+        </h2>
+        <p class="site-special-heading"> <span class="special-heading-indicator"></span><span
+            class="special-heading-text">I Have <span class="special-text">6+ Years Of Experience</span> In Software
+            Development</span> </p>
+        <p class="mt-4">{{about?.descriptionMore}}</p>
+
+        <div class="mt-5 button-section">
+          <site-button [text]="'Download CV'"></site-button>
+          <site-button [text]="'Portfolio'" [showIcon]="true" (clickEvent)="handleButtonClick('/projects')">
+          </site-button>
+        </div>
+
+        <div class="personal-info">
+          <div class="social-icons mt-5">
+            <h4 class="site-sub-heading">Connect Me</h4>
+            <a href="#" target="_blank" title="facebook"><i class="fa fa-facebook-f"></i></a>
+            <a href="#" target="_blank" title="instagram"><i class="fa fa-instagram"></i></a>
+            <a href="#" target="_blank" title="linkedin"><i class="fa fa-linkedin"></i></a>
+            <a href="https://stackoverflow.com/users/2226468/rose18" target="_blank" title="stackoverflow"><i
+                class="fa fa-stack-overflow"></i></a>
+            <a href="#" target="_blank" title="github"><i class="fa fa-github"></i></a>
+          </div>
+          <div class="interests mt-5">
+            <div class="site-sub-heading">
+              <h3>My Interests</h3>
+            </div>
+            <div class="row">
+              <span class="col-md-3 col-6 mb-4"><i class="fa fa-headphones mr-3"></i>Music</span>
+              <span class="col-md-3 col-6 mb-4"><i class="fa fa-suitcase mr-3"></i>Travelling</span>
+              <span class="col-md-3 col-6 mb-4"><i class="fa fa-film mr-3"></i>Movies</span>
+              <span class="col-md-3 col-6 mb-4"><i class="fa fa-code mr-3"></i>Coding</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 pl-lg-5 timeline">
+        <ng-template [ngIf]="experiences && experiences.length>0">
+          <div class="site-sub-heading">
+            <p class="site-special-heading"><span class="special-heading-indicator"></span> <span
+                class="special-heading-text">My <span class="special-text">Qualifications</span> &
+                <span class="special-text">Experience</span></span></p>
+            <h3>Experience & Education</h3>
+          </div>
+          <ng-template ngFor let-exp [ngForOf]="experiences" let-i="index">
+            <div class="timeline-item">
+              <span class="timeline-bullet d-md-block d-none">{{exp?.year}}</span>
+              <div class="timeline-content">
+                <div class="timeline-duration d-md-none d-block">{{exp?.duration}}</div>
+                <div class="timeline-title">{{exp?.designation}}</div>
+                <div class="timeline-subtitle">{{exp?.company}}</div>
+                <p class="mb-0">{{exp?.description}}</p>
+              </div>
+            </div>
+          </ng-template>
+
+          <ng-template [ngIf]="experiences && experiences.length>0">
+            <ng-template ngFor let-edu [ngForOf]="education" let-i="index">
+              <div class="timeline-item">
+                <span class="timeline-bullet d-md-block d-none">{{edu?.year}}</span>
+                <div class="timeline-content">
+                  <div class="timeline-duration d-md-none d-block">{{edu?.duration}}</div>
+                  <div class="timeline-title">{{edu?.school}}</div>
+                  <p class="mb-0">{{edu?.description}}</p>
+                </div>
+              </div>
+            </ng-template>
+          </ng-template>
+        </ng-template>
+      </div>
+    </div>
+
+    <div class="mt-5">
+      <div class="row">
+        <div class="col-lg-5">
+          <div class="shape-1">
+            <img src="../../../assets/theme/dots-1.png" class="img-fluid" alt="Responsive image" />
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <h2 class="site-heading">
+            <span class="heading-transparent">Professional</span>
+            <span class="heading-color"> Skills</span><br>Who I am
+          </h2>
+        </div>
+      </div>
+
+      <div class="row skills-wrapper">
+        <div class="col-lg-4">
+          <div class="skill-content">
+            <site-progress-circle [id]="'pc-1'" [label]="" [showPercentageText]="false" [percentage]="90"
+              [iconClass]="'fa-puzzle-piece'"></site-progress-circle>
+            <div class="skill-value">
+              <h4>Frontend Development</h4>
+              <h2>90<span>%</span></h2>
+            </div>
+            <div class="skill-body">
+              <ul class="skills-list">
+                <li *ngFor="let fes of frontendSkills; index as i;"><i class="fa fa-check"></i> {{fes?.name}}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="skill-content">
+            <site-progress-circle [id]="'pc-2'" [label]="" [showPercentageText]="false" [percentage]="60"
+              [iconClass]="'fa-desktop'"></site-progress-circle>
+            <div class="skill-value">
+              <h4>Backend Development</h4>
+              <h2>60<span>%</span></h2>
+            </div>
+            <div class="skill-body">
+              <ul class="skills-list">
+                <li *ngFor="let fes of backendSkills; index as i;"><i class="fa fa-check"></i> {{fes?.name}}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="skill-content">
+            <site-progress-circle [id]="'pc-3'" [label]="" [showPercentageText]="false" [percentage]="85"
+              [iconClass]="'fa-cogs'"></site-progress-circle>
+            <div class="skill-value">
+              <h4>Tools & Technologies</h4>
+              <h2>85<span>%</span></h2>
+            </div>
+            <div class="skill-body">
+              <ul class="skills-list">
+                <li *ngFor="let fes of tools; index as i;"><i class="fa fa-check"></i> {{fes?.name}}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-12">
+          <div class="contact-link text-center">
+            <p class="site-special-heading"> <span class="special-heading-indicator"></span> <span
+                class="special-heading-text">Need any project don't feel nervous say hello
+                or</span>
+              <a [routerLink]="['/contact']" class="special-text"> Contact Me <i class="fa fa-long-arrow-right"></i></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,74 @@
+<section *ngIf="contactDetails" id="blog" class="site-contact">
+  <div class="site-container slide-in-bottom">
+    <div class="row">
+      <div class="col-lg-7">
+        <h2 class="site-heading">
+          <span class="heading-transparent">Need any </span>
+          <span class="heading-color"> project</span><br> message me
+        </h2>
+        <p class="site-special-heading"> <span class="special-heading-indicator"></span> <span
+            class="special-heading-text">Let's work together. <span class="special-text">Let's make a
+              difference</span></span>
+        </p>
+
+        <div class="mt-2">
+          <form class="needs-validation">
+            <div class="form-group">
+              <textarea class="form-control" id="description" rows="10" placeholder="Write Your Message..."
+                name="description" required [(ngModel)]="description"></textarea>
+              <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+            <div class="row">
+              <div class="form-group col-md-6">
+                <input type="text" class="form-control" id="name" placeholder="Your Full Name *" name="name" required
+                  [(ngModel)]="name">
+                <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+              <div class="form-group col-md-6">
+                <input type="text" class="form-control" id="email" placeholder="Your Email *" name="email" required
+                  [(ngModel)]="email">
+                <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" id="subject" placeholder="Subject" name="subject"
+                [(ngModel)]="subject">
+            </div>
+            <div class="mt-5">
+              <site-button [text]="'Send Message'" [showIcon]="true" (clickEvent)="sendMessage()"></site-button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+<!--      <div class="color-triangle d-none d-lg-block"></div>-->
+      <div class="col-lg-5 contact-details">
+        <div class="site-sub-heading">
+          <p class="site-special-heading"><span class="special-heading-indicator"></span> <span
+              class="special-heading-text">Let's discuss for a <span class="special-text">project</span></span></p>
+          <h3>Get In Touch</h3>
+        </div>
+        <ul>
+          <li>
+            <i class="fa fa-map-marker"></i>
+            <div class="contact-info">{{contactDetails?.address}}
+              <p>Home/Office</p>
+            </div>
+          </li>
+           <li>
+            <i class="fa fa-phone"></i>
+            <div class="contact-info">{{contactDetails?.phone}}
+              <p>Mon to Fri 8am to 5pm</p>
+            </div>
+          </li>
+          <li>
+            <i class="fa fa-envelope"></i>
+            <div class="contact-info">{{contactDetails?.email}}
+              <p>Send me your message anytime!</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,95 @@
+@import "../../theme/variables.scss";
+// @import "../../animations.scss";
+
+.site-about {
+  .profile-image {
+       background-image: url("../../../assets/images/profile.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    // border-radius: 50%;
+    // border: 5px solid;
+    max-width: 400px;
+    height: 450px;
+    width: 400px;
+  }
+
+  .border-square {
+    position: absolute;
+    height: 450px;
+    width: 400px;
+    margin-left: 8px;
+    margin-top: 8px;
+    background-color: $primary-color;
+  }
+}
+
+.section-about {
+  margin: 0 auto;
+  margin-top: -200px;
+  position: relative;
+  width: 95%;
+  border-radius: 5px;
+  padding: 50px;
+  background-color: #ffffff;
+
+  @media (min-width: 768px) {
+    margin-top: -350px;
+  }
+  @media (min-width: 1024px) {
+    margin-top: -300px;
+  }
+  @media (min-width: 1300px) {
+    margin-top: -200px;
+  }
+  @media (min-width: 1440px) {
+    margin-top: -300px;
+  }
+
+  img {
+    padding: 5px;
+    max-width: 260px;
+    max-height: 260px;
+    border-radius: 50%;
+
+    @media (min-width: 769px) {
+      max-width: 300px;
+      max-height: 300px;
+    }
+  }
+
+  img:hover {
+    opacity: 0.7;
+  }
+
+  .about-info {
+    .header {
+      letter-spacing: 3px;
+    }
+
+    &-secondary {
+      font-size: 14px;
+    }
+
+    p {
+      color: rgba(0, 0, 0, 0.5);
+    }
+
+    .btn {
+      &-hire {
+        background-color: $primary-color;
+
+        a {
+          color: #ffffff;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+
+      &-download {
+        background-color: #333333;
+      }
+    }
+  }
+}

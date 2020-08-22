@@ -1,0 +1,25 @@
+@import "../../theme/variables.scss";
+
+.blog-item {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid $gray;
+  min-height: 320px;
+
+  &-overlay {
+    bottom: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+
+    a {
+      font-weight: 600;
+      color: $white;
+      text-transform: uppercase;
+    }
+  }
+
+  h5 {
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,6 @@
+<ng-template [ngIf]="siteLaunch">
+  <site-header></site-header>
+  <!-- <div [@routerTransition]="prepareRoute(outlet)"> -->
+  <router-outlet #outlet="outlet" (activate)="onActivate($event)"></router-outlet>
+
+</ng-template>

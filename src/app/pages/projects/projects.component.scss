@@ -1,0 +1,158 @@
+@import "../../theme/variables.scss";
+@import "../../theme/scrollbar.mixin.scss";
+
+.button-wrapper {
+  site-button {
+    position: absolute;
+    right: 0;
+    top: 50%;
+  }
+}
+
+.site-projects {
+  .nav-tabs {
+    border: 0;
+    .nav-link {
+      color: $white;
+      letter-spacing: 2px;
+
+      &:hover {
+        border-color: transparent;
+        color: $primary-color;
+      }
+
+      &.active {
+        color: $primary-color;
+        background-color: transparent;
+        border-color: transparent;
+      }
+    }
+  }
+}
+
+.project-item {
+  .project-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 350px;
+  }
+
+  .project-caption {
+    position: absolute;
+    z-index: 5;
+    transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    -webkit-transition: all 0.4s ease-out 0s;
+    -moz-transition: all 0.4s ease-out 0s;
+    -ms-transition: all 0.4s ease-out 0s;
+    -o-transition: all 0.4s ease-out 0s;
+    transition: all 0.4s ease-out 0s;
+    opacity: 0;
+    visibility: hidden;
+    padding: 1.5rem;
+
+    a {
+      font-weight: 600;
+      cursor: pointer;
+      text-transform: uppercase;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &::after {
+    content: "";
+    background: $red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-out 0s;
+    -moz-transition: all 0.4s ease-out 0s;
+    -ms-transition: all 0.4s ease-out 0s;
+    -o-transition: all 0.4s ease-out 0s;
+    transition: all 0.4s ease-out 0s;
+  }
+
+  &:hover {
+    &::after {
+      opacity: 0.9;
+      visibility: visible;
+    }
+    .project-caption {
+      transform: translateY(-102%);
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+.project-detail-overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  right: 0;
+  top: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+  @include scrollbars(1px, $gray, $black);
+
+  .overlay-content {
+    position: relative;
+    width: 100%;
+    padding: 2rem;
+
+    h3 {
+      text-align: center;
+      color: $primary-color;
+      letter-spacing: 4px;
+      margin-bottom: 2rem;
+
+      @media (max-width: 768px) {
+        margin: 3rem 0;
+      }
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+      letter-spacing: 2px;
+    }
+
+    li {
+      margin: 10px 0;
+    }
+
+    .label {
+      text-transform: capitalize;
+    }
+
+    p {
+      line-height: 2;
+      letter-spacing: 1px;
+      margin-top: 2rem;
+    }
+  }
+
+  .close-btn {
+    position: absolute;
+    font-size: $font-size-large;
+    cursor: pointer;
+    right: 0;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    z-index: 1;
+  }
+}

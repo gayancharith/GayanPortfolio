@@ -1,0 +1,36 @@
+<nav class="site-sidenav">
+  <div class="d-lg-block d-none side-menu">
+    <a id="home" [routerLink]="['/home']" routerLinkActive="is-active" [routerLinkActiveOptions]="{ exact: true }"><i class="fa fa-home"></i><span>Home</span></a>
+    <a id="about" [routerLink]="['/about']" routerLinkActive="is-active" [routerLinkActiveOptions]="{ exact: true }"><i class="fa fa-user"></i><span>About</span></a>
+    <a id="skills" [routerLink]="['/skills']" routerLinkActive="is-active" [routerLinkActiveOptions]="{ exact: true }"><i class="fa fa-book"></i><span>Skills</span></a>
+    <a id="projects" [routerLink]="['/projects']" routerLinkActive="is-active" [routerLinkActiveOptions]="{ exact: true }"><i class="fa fa-suitcase"></i><span>Projects</span></a>
+    <a id="blog" [routerLink]="['/blog']" routerLinkActive="is-active" [routerLinkActiveOptions]="{ exact: true }"><i class="fa fa-comments"></i><span>Blog</span></a>
+    <a id="contact"[routerLink]="['/contact']" routerLinkActive="is-active" [routerLinkActiveOptions]="{ exact: true }"><i class="fa fa-phone"></i><span>Contact</span></a>
+  </div>
+</nav>
+
+<nav class="menu-toggle">
+  <i class="d-block d-lg-none fa fa-bars" (click)="showToggleMenu=true"></i>
+  <ul class="menu" [ngClass]="{'side-menu-opened': showToggleMenu}">
+    <li class="text-right mb-0" (click)="showToggleMenu=false">
+      <i class="fa fa-close"></i></li>
+    <li>
+      <a [routerLink]="['/home']"><i class="fa fa-home"></i> Home</a>
+    </li>
+    <li>
+      <a [routerLink]="['/about']"><i class="fa fa-user"></i> About</a>
+    </li>
+    <li>
+      <a [routerLink]="['/skills']"><i class="fa fa-book"></i> Resume</a>
+    </li>
+    <li>
+      <a [routerLink]="['/projects']"><i class="fa fa-suitcase"></i> Projects</a>
+    </li>
+    <li>
+      <a [routerLink]="['/blog']"><i class="fa fa-comments"></i> Blog</a>
+    </li>
+    <li>
+      <a [routerLink]="['/contact']"><i class="fa fa-phone"></i> Contact</a>
+    </li>
+  </ul>
+</nav>

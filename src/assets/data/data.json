@@ -1,0 +1,355 @@
+{
+  "about": {
+    "name": "Achini G. Wijesingha",
+    "fullName": "Achini Gayanthika Wijesingha",
+    "mobile": "+94 71 52 81 368",
+    "email": "agayanthika@gmail.com",
+    "profession": "Software Engineer",
+    "description": "I'm a Software Engineer specializing in frontend development and experienced with all stages of the development life cycle for dynamic web projects. I believe that I'm a proactive person who can easily adapt to new working environment. A strong porfessional with a Bachelor's Degree in Computer Science at University of Colombo School of Computing, Sri Lanka.",
+    "descriptionMore": "Currently I am working as a Senior Software Engineer at a well known company in Sri Lanka. I love to solve problems in an innovative manner finding easy and better solutions to solve them. I always try my best to bring the best experience to my clients beacuse I believe, clients' satisfaction and positive feedbacks are more valuable than anything in the industry. If you are looking for an outstanding individual to your team, then you are at the right place."
+  },
+  "experiences": [
+    {
+      "designation": "Senior Software Engineer",
+      "company": "CodeGen International",
+      "year": "2018 Present",
+      "duration": "Apr 2018 - Present",
+      "description": "Collaborate with all the stages of software development process."
+    },
+    {
+      "designation": "Software Engineer",
+      "company": "CodeGen International",
+      "year": "2016 2018",
+      "duration": "May 2016 - Apr 2018",
+      "description": "Collaborate with all the stages of software development process."
+    },
+    {
+      "designation": "Software Engineer",
+      "company": "Just In Times",
+      "year": "2015 2016",
+      "duration": "Sep 2015 - Feb 2016",
+      "description": "Collaborated with all the stages of software development process ."
+    },
+    {
+      "designation": "Software Engineer",
+      "company": "Omobio",
+      "year": "2014 2015",
+      "duration": "Jul 2014 - Sep 2015",
+      "description": "Collaborated with all the stages of software development process."
+    },
+    {
+      "designation": "Trainee Software Engineer",
+      "company": "X-ONT Software",
+      "year": "2013 2014",
+      "duration": "Jul 2013 - Feb 2014",
+      "description": "Collaborated with all the stages of software development process."
+    }
+  ],
+  "education": [
+    {
+      "school": "University of Colombo School of Computing, Sri Lanka",
+      "year": "2010 2013",
+      "duration": "2010 - 2013",
+      "description": "Bachelor's Degree in Computer Science"
+    }
+  ],
+  "skills": {
+    "frontend": [
+      {
+        "name": "Angular",
+        "score": 85
+      },
+      {
+        "name": "AngularJs",
+        "score": 85
+      },
+      {
+        "name": "TypeScript",
+        "score": 80
+      },
+      {
+        "name": "JavaScript",
+        "score": 80
+      },
+      {
+        "name": "jQuery",
+        "score": 70
+      },
+      {
+        "name": "HTML5",
+        "score": 85
+      },
+      {
+        "name": "CSS",
+        "score": 85
+      },
+      {
+        "name": "SASS",
+        "score": 75
+      },
+      {
+        "name": "Bootstrap 4",
+        "score": 75
+      },
+      {
+        "name": "D3 Charting Library",
+        "score": 40
+      }
+    ],
+    "backend": [
+      {
+        "name": "Java",
+        "score": 55
+      },
+      {
+        "name": "Java OOP",
+        "score": 75
+      },
+      {
+        "name": "Spring",
+        "score": 50
+      },
+      {
+        "name": "RESTful",
+        "score": 60
+      },
+      {
+        "name": "Micro Service",
+        "score": 55
+      }
+    ],
+    "tools": [
+      {
+        "name": "WebStorm",
+        "score": 80
+      },
+      {
+        "name": "Intellij IDEA",
+        "score": 70
+      },
+      {
+        "name": "Visual Studio Code",
+        "score": 80
+      },
+      {
+        "name": "GitLab",
+        "score": 80
+      },
+      {
+        "name": "Jira",
+        "score": 80
+      },
+      {
+        "name": "Postman",
+        "score": 70
+      },
+      {
+        "name": "MySQL",
+        "score": 70
+      },
+      {
+        "name": "Oracle",
+        "score": 55
+      },
+      {
+        "name": "Jenkins",
+        "score": 60
+      },
+      {
+        "name": "Tomcat",
+        "score": 80
+      }
+    ]
+  },
+  "projects": [
+    {
+      "type": "websites",
+      "decsription": "Websites",
+      "projects": [
+        {
+          "name": "Azamara IBE",
+          "description": "Azamara IBE is a B2C (business to customer) web based system providing a seamless andinteractive Cruise plus packaging flow with Cruise, Flights, Transfers, Hotels and Land Tour products. Thewebsite has the capability of multiple device responsiveness.",
+          "imgUrl": "aza.jpg",
+          "properties": [
+            {
+              "label": "client",
+              "value": "RCL Cruises Ltd."
+            },
+            {
+              "label": "type",
+              "value": "Website"
+            },
+            {
+              "label": "technologies",
+              "value": "Angular 7, Angular Library, HTML, Bootstrap 4, SCSS, Sinophia npm"
+            },
+            {
+              "label": "role",
+              "value": "Senior Front end Developer"
+            },
+            {
+              "label": "url",
+              "value": "https://www.azamara.co.uk/find-a-journey#date=2020-08-01&sort=date-asc"
+            }
+          ]
+        },
+        {
+          "name": "Airwaves",
+          "imgUrl": "airwaves.jpg",
+          "description": "AirWaves is a B2B (business to business) web based system for travel agents to book Cruise plus holiday packages with Cruise, Flights, Transfers and Hotels.",
+          "properties": [
+            {
+              "label": "client",
+              "value": "RCL Cruises Ltd."
+            },
+            {
+              "label": "type",
+              "value": "Website"
+            },
+            {
+              "label": "technologies",
+              "value": "Angular 4, HTML, SCSS, Sinophia npm"
+            },
+            {
+              "label": "role",
+              "value": "Front end Developer"
+            }
+          ]
+        },
+        {
+          "name": "Cache Reporting Tool",
+          "description": "There is a price cache to store price details of holiday packages and this cache storing millions of data records. So, Cache Reporting Tool was build to analyze the performance and the accuracy of the price cache, and this is a graphical and tabular presentation of cache performance.",
+          "imgUrl": "dashboard.jpg",
+          "properties": [
+            {
+              "label": "client",
+              "value": "RCL Cruises Ltd."
+            },
+            {
+              "label": "type",
+              "value": "Website"
+            },
+            {
+              "label": "technologies",
+              "value": "Angular 2, SCSS, D3 charting library, Sinophia npm, elasticsearch 5, Micro services architecture, REST web services, Spring"
+            },
+            {
+              "label": "role",
+              "value": "Front end & Back end Developer"
+            }
+          ]
+        },
+        {
+          "name": "Surf Air",
+          "description": "Surf Air is a demonstration web application providing a facility to book flight plus hotel air packages. Furthermore it has a capability of analyzing hotel reviews and suggesting attractions around the hotel. ChatBot is one of the important features to speed up customer resolution.",
+          "imgUrl": "air.jpg",
+          "properties": [
+            {
+              "label": "type",
+              "value": "Website"
+            },
+            {
+              "label": "technologies",
+              "value": "Angular 2, HTML, SCSS, Sinophia npm"
+            },
+            {
+              "label": "role",
+              "value": "Front end Developer"
+            }
+          ]
+        },
+        {
+          "name": "Surf Hotels",
+          "description": "Surf Hotels is a demonstration web application providing a facility to book hotel packages. Furthermore it has a capability of analyzing hotel reviews and suggesting attractions around the hotel. ChatBot is one of the important features to speed up customer resolution.",
+          "imgUrl": "hotel.jpg",
+          "properties": [
+            {
+              "label": "type",
+              "value": "Website"
+            },
+            {
+              "label": "technologies",
+              "value": "Angular 2, HTML, SCSS, Sinophia npm"
+            },
+            {
+              "label": "role",
+              "value": "Front end Developer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "mobile",
+      "decsription": "Mobile",
+      "projects": [
+        {
+          "name": "Robi Mobile Money",
+          "description": "Robi Mobile Money is an USSD mobile application for Robi Axiata (Pvt) Ltd. in Bangladesh, which facilitates for fund transferring, utility bill payments via mobile.",
+          "imgUrl": "robi.jpg",
+          "properties": [
+            {
+              "label": "client",
+              "value": "Robi Axiata (Pvt) Ltd."
+            },
+            {
+              "label": "type",
+              "value": "USSD Application"
+            },
+            {
+              "label": "technologies",
+              "value": "Structs2, Servlets, Java, Oracle"
+            },
+            {
+              "label": "role",
+              "value": "Back end Developer"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contact": {
+    "email": "agayanthika@gmail.com",
+    "phone": "+94",
+    "address": "Galle, Sri Lanka"
+  },
+  "blogs": [
+    {
+      "title": "Build a zoom clone with node js",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin semper sem non luctus. Integer tellus lectus, convallis ut purus quis, fermentum rhoncus orci.",
+      "url": "/",
+      "imgUrl": "blog-0.jpg"
+    },
+    {
+      "title": "Top 5 tools for andriod development",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin semper sem non luctus. Integer tellus lectus, convallis ut purus quis, fermentum rhoncus orci.",
+      "url": "/",
+      "imgUrl": "blog-1.jpg"
+    },
+    {
+      "title": "Top 5 web sites for developers",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin semper sem non luctus. Integer tellus lectus, convallis ut purus quis, fermentum rhoncus orci.",
+      "url": "/",
+      "imgUrl": "blog-2.jpg"
+    },
+    {
+      "title": "Learn react for beginners",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin semper sem non luctus. Integer tellus lectus, convallis ut purus quis, fermentum rhoncus orci.",
+      "url": "/",
+      "imgUrl": "blog-3.jpg"
+    },
+    {
+      "title": "Top 5 VS Code extensions",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin semper sem non luctus. Integer tellus lectus, convallis ut purus quis, fermentum rhoncus orci.",
+      "url": "/",
+      "imgUrl": "blog-4.jpg"
+    },
+    {
+      "title": "Cyber kill chain",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin semper sem non luctus. Integer tellus lectus, convallis ut purus quis, fermentum rhoncus orci.",
+      "url": "/",
+      "imgUrl": "blog-5.jpg"
+    }
+  ]
+}
