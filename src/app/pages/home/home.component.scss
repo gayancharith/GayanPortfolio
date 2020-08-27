@@ -24,10 +24,11 @@
   position: fixed;
   height: 200%;
   width: 100%;
-  transform: rotate(15deg);
-  right: -87%;
+  transform: rotate(-15deg);
+  left: -87%;
   top: -50%;
   background: rgba($primary-color, 0.9);
+  border-right: 5px solid $white;
 }
 
 .overlay {
@@ -90,3 +91,5 @@ site-button:first-child {
     padding-bottom: 40px;
   }
 }
+
+

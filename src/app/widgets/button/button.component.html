@@ -1,4 +1,4 @@
-<a class="site-button" (click)="emitClickEvent($event)">
+<a class="site-button" [ngClass]="{fill:fill}" (click)="emitClickEvent($event)">
   <span>{{text}}</span>
   <ng-template [ngIf]="showIcon">
     <svg width="13px" height="10px" viewBox="0 0 13 10">

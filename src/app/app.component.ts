@@ -1,9 +1,9 @@
-import { Component, OnInit, PLATFORM_ID, Inject } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { BreakpointObserverService } from './services/utils/breakpoint-observer.service';
-import { RouterOutlet } from '@angular/router';
-import { routerTransition } from './animations';
-import { isPlatformBrowser } from '@angular/common';
+import {Component, OnInit, PLATFORM_ID, Inject} from '@angular/core';
+import {HttpClient} from '@angular/common/http';
+import {BreakpointObserverService} from './services/utils/breakpoint-observer.service';
+import {ActivatedRoute, NavigationEnd, Router, RouterOutlet} from '@angular/router';
+import {routerTransition} from './animations';
+import {isPlatformBrowser} from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -13,12 +13,19 @@ import { isPlatformBrowser } from '@angular/common';
 })
 export class AppComponent implements OnInit {
   siteLaunch: boolean = false;
+  activatedRouteIndex: number;
 
-  constructor(
-    private http: HttpClient,
-    private breakpointService: BreakpointObserverService,
-    @Inject(PLATFORM_ID) private platformId: Object
+  constructor(private router: Router,
+              private activatedRoute: ActivatedRoute,
+              private http: HttpClient,
+              private breakpointService: BreakpointObserverService,
+              @Inject(PLATFORM_ID) private platformId: Object
   ) {
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        this.activatedRouteIndex = activatedRoute.firstChild.routeConfig.data.index;
+      }
+    });
     breakpointService.initService();
   }
 
