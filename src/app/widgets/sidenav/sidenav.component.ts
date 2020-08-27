@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class SidenavComponent implements OnInit {
   showToggleMenu: boolean = false;
   toggleMenuOpacity: number = 0;
+  isOpen: boolean;
 
   constructor() { }
 
