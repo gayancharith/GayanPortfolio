@@ -48,10 +48,10 @@
       text-align: center;
       background: $black;
 
-      //&:last-child
-      //{
-      //  border-bottom: 0;
-      //}
+      &:last-child
+      {
+        border-bottom: 0;
+      }
 
       &.active{
         .triangle{
