@@ -168,7 +168,7 @@
       "projects": [
         {
           "name": "Azamara IBE",
-          "description": "Azamara IBE is a B2C (business to customer) web based system providing a seamless andinteractive Cruise plus packaging flow with Cruise, Flights, Transfers, Hotels and Land Tour products. Thewebsite has the capability of multiple device responsiveness.",
+          "description": "Azamara IBE is a B2C (business to customer) web based system providing a seamless and interactive Cruise plus packaging flow with Cruise, Flights, Transfers, Hotels and Land Tour products. The website has the capability of multiple device responsiveness.",
           "imgUrl": "aza.jpg",
           "properties": [
             {
@@ -189,7 +189,7 @@
             },
             {
               "label": "url",
-              "value": "https://www.azamara.co.uk/find-a-journey#date=2020-08-01&sort=date-asc"
+              "value": "https://booking.azamaraclubcruises.com/ibe/init?brand=AZA&departureDate=20210424&cruiseOnly=true&ship=JR&distChannel=W&clientGroup=Direct&company=LON&division=LONDIR&currency=GBP&lang=en&sourceCountry=GB&_ga=2.188739432.136244017.1602054081-828190462.1597898682"
             }
           ]
         },
@@ -231,7 +231,7 @@
             },
             {
               "label": "technologies",
-              "value": "Angular 2, SCSS, D3 charting library, Sinophia npm, elasticsearch 5, Micro services architecture, REST web services, Spring"
+              "value": "Angular 2, SCSS, Sinophia npm, elasticsearch 5, Micro services architecture, REST web services, Spring"
             },
             {
               "label": "role",
@@ -241,7 +241,7 @@
         },
         {
           "name": "Surf Air",
-          "description": "Surf Air is a demonstration web application providing a facility to book flight plus hotel air packages. Furthermore it has a capability of analyzing hotel reviews and suggesting attractions around the hotel. ChatBot is one of the important features to speed up customer resolution.",
+          "description": "Surf Air is a demonstration web application providing a facility to book flight plus hotel air packages. Furthermore it has a capability of analyzing hotel reviews and suggesting attractions around the hotel. Personalized results and chatbot are the important features to speed up customer resolution.",
           "imgUrl": "air.jpg",
           "properties": [
             {
@@ -260,7 +260,7 @@
         },
         {
           "name": "Surf Hotels",
-          "description": "Surf Hotels is a demonstration web application providing a facility to book hotel packages. Furthermore it has a capability of analyzing hotel reviews and suggesting attractions around the hotel. ChatBot is one of the important features to speed up customer resolution.",
+          "description": "Surf Hotels is a demonstration web application providing a facility to book hotel packages. Furthermore it has a capability of analyzing hotel reviews and suggesting attractions around the hotel. Personalized results and chatbot are the important features to speed up customer resolution.",
           "imgUrl": "hotel.jpg",
           "properties": [
             {
