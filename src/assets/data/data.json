@@ -10,10 +10,17 @@
   },
   "experiences": [
     {
+      "designation": "Freelance Frontend Developer",
+      "company": "Fiverr & Upwork",
+      "year": "2020 Present",
+      "duration": "2020 - Present",
+      "description": "Collaborate with all the stages of software development process."
+    },
+    {
       "designation": "Senior Software Engineer",
       "company": "CodeGen International",
-      "year": "2018 Present",
-      "duration": "Apr 2018 - Present",
+      "year": "2018 2020",
+      "duration": "Apr 2018 - 2020",
       "description": "Collaborate with all the stages of software development process."
     },
     {
