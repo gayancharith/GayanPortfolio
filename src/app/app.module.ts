@@ -6,6 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { SidenavModule } from './widgets/sidenav/sidenav.module';
 import { HeaderModule } from './widgets/header/header.module';
+import {ToastrModule} from 'ngx-toastr';
 
 @NgModule({
   declarations: [AppComponent],
@@ -15,7 +16,8 @@ import { HeaderModule } from './widgets/header/header.module';
     AppRoutingModule,
     HttpClientModule,
     SidenavModule,
-    HeaderModule
+    HeaderModule,
+    ToastrModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent],
