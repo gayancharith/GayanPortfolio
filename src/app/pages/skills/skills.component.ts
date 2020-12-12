@@ -38,4 +38,15 @@ export class SkillsComponent implements OnInit {
   handleButtonClick(url: string) {
     this.router.navigateByUrl(url);
   }
+
+  downloadCv() {
+    const NAME = "Gayan-Witharana-CV";
+    const CV_PATH = "../../../assets/data/Gayan-Witharana-CV.pdf";
+    let link = document.createElement("a");
+    link.setAttribute('download', NAME);
+    link.href = CV_PATH;
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+  }
 }

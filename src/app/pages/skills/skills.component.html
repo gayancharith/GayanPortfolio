@@ -12,7 +12,7 @@
         <p class="mt-4">{{about?.descriptionMore}}</p>
 
         <div class="mt-5 button-section">
-          <site-button [text]="'Download CV'"></site-button>
+          <site-button [text]="'Download CV'" (clickEvent)="downloadCv()"></site-button>
           <site-button [text]="'Portfolio'" [showIcon]="true" (clickEvent)="handleButtonClick('/projects')">
           </site-button>
         </div>
