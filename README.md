@@ -1,12 +1,13 @@
-# AchiniPortfolio
+# GayanPortfolio
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
 
-
 ## How to customize?
+
 Simply change the content of data.json file (`assets/data/data.json`).
 
 ## Npm install
+
 Run `npm install` or `npm i` to install npm packages.
 
 ## Development server

@@ -1,54 +1,47 @@
 {
   "about": {
-    "name": "Achini G. Wijesingha",
-    "fullName": "Achini Gayanthika Wijesingha",
-    "mobile": "+94",
-    "email": "agayanthika@gmail.com",
-    "profession": "Software Engineer",
-    "description": "I'm a Software Engineer specializing in frontend development and experienced with all stages of the development life cycle for dynamic web projects. I believe that I'm a proactive person who can easily adapt to new working environment. A strong professional with a Bachelor's Degree in Computer Science at University of Colombo School of Computing, Sri Lanka.",
-    "descriptionMore": "Currently I am working as a Senior Software Engineer at a well known company in Sri Lanka. I love to solve problems in an innovative manner finding easy and better solutions to solve them. I always try my best to bring the best experience to my clients because I believe, clients' satisfaction and positive feedbacks are more valuable than anything in the industry. If you are looking for an outstanding individual to your team, then you are at the right place."
+    "name": "Gayan Witharana",
+    "fullName": "Gayan Witharana",
+    "mobile": "+6035532399",
+    "email": "vgayancharith@gmail.com",
+    "profession": "Senior Front-End Developer",
+    "description": "I'm a Experienced Senior Software Engineer with a Bachelor of Computer Science, currently working at a well reputed company in Sri Lanka who has more than 5 years of working history in computer software industry. I am a person with a passion for developing innovative systems that accelerates the efficiency and effectiveness of organizational success.",
+    "descriptionMore": "I'm a Experienced Senior Software Engineer with a Bachelor of Computer Science, currently working at a well reputed company in Sri Lanka who has more than 5 years of working history in computer software industry. I am a person with a passion for developing innovative systems that accelerates the efficiency and effectiveness of organizational success."
   },
   "experiences": [
     {
-      "designation": "Freelance Frontend Developer",
-      "company": "Fiverr & Upwork",
+      "designation": "Senior Front-End Developer",
+      "company": "Archisoft Global Sdn Bhd. (Pvt) Ltd",
       "year": "2020 Present",
       "duration": "2020 - Present",
       "description": "Collaborate with all the stages of software development process."
     },
     {
       "designation": "Senior Software Engineer",
+      "company": "Esshva techq(Pvt) Ltd",
+      "year": "2019 2020",
+      "duration": "Feb 2019 - Jan 2020",
+      "description": "Collaborate with all the stages of software development process."
+    },
+    {
+      "designation": "Senior Software Engineer",
       "company": "CodeGen International",
-      "year": "2018 2020",
-      "duration": "Apr 2018 - 2020",
+      "year": "2017 2019",
+      "duration": "Jan 2017 - Feb 2019",
       "description": "Collaborate with all the stages of software development process."
     },
     {
       "designation": "Software Engineer",
-      "company": "CodeGen International",
-      "year": "2016 2018",
-      "duration": "May 2016 - Apr 2018",
-      "description": "Collaborate with all the stages of software development process."
-    },
-    {
-      "designation": "Software Engineer",
-      "company": "Just In Times",
-      "year": "2015 2016",
-      "duration": "Sep 2015 - Feb 2016",
+      "company": "Thinkcube Systems (Pvt) Ltd",
+      "year": "2014 2017",
+      "duration": "Jan 2014 - Jan 2017",
       "description": "Collaborated with all the stages of software development process ."
     },
     {
-      "designation": "Software Engineer",
-      "company": "Omobio",
-      "year": "2014 2015",
-      "duration": "Jul 2014 - Sep 2015",
-      "description": "Collaborated with all the stages of software development process."
-    },
-    {
       "designation": "Trainee Software Engineer",
-      "company": "X-ONT Software",
+      "company": "Thinkcube Systems (Pvt) Ltd",
       "year": "2013 2014",
-      "duration": "Jul 2013 - Feb 2014",
+      "duration": "Jul 2013 - Jan 2014",
       "description": "Collaborated with all the stages of software development process."
     }
   ],
@@ -63,19 +56,31 @@
   "skills": {
     "frontend": [
       {
-        "name": "Angular",
+        "name": "React",
+        "score": 0
+      },
+      {
+        "name": "Javascript",
         "score": 85
       },
       {
-        "name": "AngularJs",
-        "score": 85
-      },
-      {
-        "name": "TypeScript",
+        "name": "Next.js",
         "score": 80
       },
       {
-        "name": "JavaScript",
+        "name": "Redux",
+        "score": 80
+      },
+      {
+        "name": "React-hooks",
+        "score": 80
+      },
+      {
+        "name": "Redux-thunk",
+        "score": 80
+      },
+      {
+        "name": "React-query",
         "score": 80
       },
       {
@@ -91,49 +96,37 @@
         "score": 85
       },
       {
-        "name": "SASS",
-        "score": 75
-      },
-      {
-        "name": "Bootstrap 4",
-        "score": 75
-      },
-      {
         "name": "D3 Charting Library",
         "score": 40
       }
     ],
     "backend": [
       {
-        "name": "Java",
+        "name": "Node.js",
         "score": 55
       },
       {
-        "name": "Java OOP",
+        "name": "Php",
         "score": 75
       },
       {
-        "name": "Spring",
+        "name": "Couchbase",
         "score": 50
       },
       {
-        "name": "RESTful",
+        "name": "Mongodb",
         "score": 60
       },
       {
-        "name": "Micro Service",
+        "name": "Mysql",
+        "score": 55
+      },
+      {
+        "name": "Zend 2.0",
         "score": 55
       }
     ],
     "tools": [
-      {
-        "name": "WebStorm",
-        "score": 80
-      },
-      {
-        "name": "Intellij IDEA",
-        "score": 70
-      },
       {
         "name": "Visual Studio Code",
         "score": 80
@@ -155,7 +148,7 @@
         "score": 70
       },
       {
-        "name": "Oracle",
+        "name": "Netbeans",
         "score": 55
       },
       {
@@ -163,7 +156,7 @@
         "score": 60
       },
       {
-        "name": "Tomcat",
+        "name": "Github",
         "score": 80
       }
     ]
@@ -174,13 +167,13 @@
       "decsription": "Websites",
       "projects": [
         {
-          "name": "Azamara IBE",
-          "description": "Azamara IBE is a B2C (business to customer) web based system providing a seamless and interactive Cruise plus packaging flow with Cruise, Flights, Transfers, Hotels and Land Tour products. The website has the capability of multiple device responsiveness.",
+          "name": "MTX",
+          "description": "A Business to Business application with an admin panel.",
           "imgUrl": "aza.jpg",
           "properties": [
             {
               "label": "client",
-              "value": "RCL Cruises Ltd."
+              "value": "Internal Product"
             },
             {
               "label": "type",
@@ -188,67 +181,59 @@
             },
             {
               "label": "technologies",
-              "value": "Angular 7, Angular Library, HTML, Bootstrap 4, SCSS, Sinophia npm"
+              "value": "reactjs, netxtjs, redux, react-hooks, react-query"
             },
             {
               "label": "role",
               "value": "Senior Front end Developer"
-            },
-            {
-              "label": "url",
-              "value": "https://booking.azamaraclubcruises.com/ibe/init?brand=AZA&departureDate=20210424&cruiseOnly=true&ship=JR&distChannel=W&clientGroup=Direct&company=LON&division=LONDIR&currency=GBP&lang=en&sourceCountry=GB&_ga=2.188739432.136244017.1602054081-828190462.1597898682"
             }
           ]
         },
         {
-          "name": "Airwaves",
+          "name": "Xforce",
           "imgUrl": "airwaves.jpg",
           "description": "AirWaves is a B2B (business to business) web based system for travel agents to book Cruise plus holiday packages with Cruise, Flights, Transfers and Hotels.",
           "properties": [
             {
-              "label": "client",
-              "value": "RCL Cruises Ltd."
-            },
-            {
               "label": "type",
               "value": "Website"
             },
             {
               "label": "technologies",
-              "value": "Angular 4, HTML, SCSS, Sinophia npm"
+              "value": "reactjs, nextjs, redux, react-hooks"
             },
             {
               "label": "role",
               "value": "Front end Developer"
+            },
+            {
+              "label": "url",
+              "value": "https://xforce.cornerstonex.com.my"
             }
           ]
         },
         {
-          "name": "Cache Reporting Tool",
-          "description": "There is a price cache to store price details of holiday packages and this cache storing millions of data records. So, Cache Reporting Tool was build to analyze the performance and the accuracy of the price cache, and this is a graphical and tabular presentation of cache performance.",
+          "name": "Madthread - Singapore",
+          "description": "A subscription base web system and mobile application to facilitate renting and buying clothes.",
           "imgUrl": "dashboard.jpg",
           "properties": [
-            {
-              "label": "client",
-              "value": "RCL Cruises Ltd."
-            },
             {
               "label": "type",
               "value": "Website"
             },
             {
               "label": "technologies",
-              "value": "Angular 2, SCSS, Sinophia npm, elasticsearch 5, Micro services architecture, REST web services, Spring"
+              "value": "Reactjs, Node js, GraphQl, Mongodb, React-native, react hooks, redux, redux-thunk"
             },
             {
               "label": "role",
-              "value": "Front end & Back end Developer"
+              "value": "Senior Software Engineer"
             }
           ]
         },
         {
-          "name": "Surf Air",
-          "description": "Surf Air is a demonstration web application providing a facility to book flight plus hotel air packages. Furthermore it has a capability of analyzing hotel reviews and suggesting attractions around the hotel. Personalized results and chatbot are the important features to speed up customer resolution.",
+          "name": "Automobile classifieds and cashoffer system - USA",
+          "description": "Classifieds facilitate users to showcase automobiles and receive cashoffer. This also includes inventory and co-part management as well as additional services such as transportation and safe-exchange.",
           "imgUrl": "air.jpg",
           "properties": [
             {
@@ -257,17 +242,17 @@
             },
             {
               "label": "technologies",
-              "value": "Angular 2, HTML, SCSS, Sinophia npm"
+              "value": "reactjs, redux, redux-thunk, redux-persist, reactive-search, .net core 2 - 2.2 serenity,  microservices architecture, rest web-api, react hooks, redux selectors, jest"
             },
             {
               "label": "role",
-              "value": "Front end Developer"
+              "value": "Senior Software Engineer"
             }
           ]
         },
         {
-          "name": "Surf Hotels",
-          "description": "Surf Hotels is a demonstration web application providing a facility to book hotel packages. Furthermore it has a capability of analyzing hotel reviews and suggesting attractions around the hotel. Personalized results and chatbot are the important features to speed up customer resolution.",
+          "name": "EGN Web App",
+          "description": "Web application that manages citizens data for Sri Lanka government. The application is based on micro service architecture.",
           "imgUrl": "hotel.jpg",
           "properties": [
             {
@@ -276,11 +261,34 @@
             },
             {
               "label": "technologies",
-              "value": "Angular 2, HTML, SCSS, Sinophia npm"
+              "value": "Php, lumen, Vue js, ecmascript-6, couchbase, webpack"
             },
             {
               "label": "role",
-              "value": "Front end Developer"
+              "value": "Senior Software Engineer"
+            }
+          ]
+        },
+        {
+          "name": "Agrinous Web App",
+          "description": "Web application that manages livestock sales in Australia same as the mobile application. ",
+          "imgUrl": "hotel.jpg",
+          "properties": [
+            {
+              "label": "type",
+              "value": "Website"
+            },
+            {
+              "label": "technologies",
+              "value": "Php, silex, reactjs, redux, redux-saga, ecmascript-6, couchbase"
+            },
+            {
+              "label": "role",
+              "value": "Senior Software Engineer"
+            },
+            {
+              "label": "url",
+              "value": "www.agrinous.com"
             }
           ]
         }
@@ -291,25 +299,21 @@
       "decsription": "Mobile",
       "projects": [
         {
-          "name": "Robi Mobile Money",
-          "description": "Robi Mobile Money is an USSD mobile application for Robi Axiata (Pvt) Ltd. in Bangladesh, which facilitates for fund transferring, utility bill payments via mobile.",
+          "name": "Agrinous Mobile App",
+          "description": "Mobile application for real time processing of livestock sales in Australia. This application handles eid scanning with bluetooth technology to handle stock management, selling and delivery sections.",
           "imgUrl": "robi.jpg",
           "properties": [
-            {
-              "label": "client",
-              "value": "Robi Axiata (Pvt) Ltd."
-            },
             {
               "label": "type",
               "value": "USSD Application"
             },
             {
               "label": "technologies",
-              "value": "Structs2, Servlets, Java, Oracle"
+              "value": "reactjs, react-native, redux, redux-saga, wix-react-native-navigation, ecmascript-6, redux selectors, jest, e2e testing, appium, couchbase-lite"
             },
             {
               "label": "role",
-              "value": "Back end Developer"
+              "value": "Senior Software Engineer"
             }
           ]
         }
@@ -317,9 +321,9 @@
     }
   ],
   "contact": {
-    "email": "agayanthika@gmail.com",
-    "phone": "+94",
-    "address": "Colombo, Sri Lanka"
+    "email": "vgayancharith@gmail.com",
+    "phone": "+601135532399",
+    "address": "Selangor, Malaysia"
   },
   "blogs": [
     {

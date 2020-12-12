@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "AchiniPortfolio": {
+    "GayanPortfolio": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/AchiniPortfolio",
+            "outputPath": "dist/GayanPortfolio",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -71,18 +71,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "AchiniPortfolio:build"
+            "browserTarget": "GayanPortfolio:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "AchiniPortfolio:build:production"
+              "browserTarget": "GayanPortfolio:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "AchiniPortfolio:build"
+            "browserTarget": "GayanPortfolio:build"
           }
         },
         "test": {
@@ -119,18 +119,18 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "AchiniPortfolio:serve"
+            "devServerTarget": "GayanPortfolio:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "AchiniPortfolio:serve:production"
+              "devServerTarget": "GayanPortfolio:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "AchiniPortfolio",
+  "defaultProject": "GayanPortfolio",
   "cli": {
     "analytics": false
   }
