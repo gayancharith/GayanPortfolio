@@ -43,7 +43,7 @@
     </div>
 
     <!-- Project Detail Overlay -->
-    <div class="project-detail-overlay" [ngStyle]="{'width': overlayWidth}">
+    <div class="project-detail-overlay" [ngStyle]="{'width': overlayWidth}" (click)="$event.stopPropagation()">
 
       <!-- Button to close the project detail overlay -->
       <a class="close-btn" (click)="hideProjectDetails()" title="Close">

@@ -1,4 +1,4 @@
-import {Component, OnInit, AfterViewInit, HostListener} from '@angular/core';
+import {Component, OnInit, HostListener} from '@angular/core';
 import {BreakpointObserverService} from 'src/app/services/utils/breakpoint-observer.service';
 import {Router} from '@angular/router';
 import {AppUtilsService} from 'src/app/services/utils/app-utils.service';
@@ -7,11 +7,8 @@ import {AppUtilsService} from 'src/app/services/utils/app-utils.service';
   selector: 'app-projects',
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss'],
-  // host: {
-  //   '(document:scroll)': 'addAnimation()',
-  // },
 })
-export class ProjectsComponent implements OnInit, AfterViewInit {
+export class ProjectsComponent implements OnInit {
   projects: Array<any>;
   overlayWidth: string;
   selectedProject;
@@ -21,10 +18,6 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
   }
 
   constructor(private router: Router, private breakPointService: BreakpointObserverService) {
-  }
-
-  ngAfterViewInit(): void {
-    // this.addAnimation();
   }
 
   ngOnInit(): void {
@@ -47,24 +40,6 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
 
   handleButtonClick(url: string) {
     this.router.navigateByUrl(url);
-  }
-
-  addAnimation() {
-    let elmList = document.querySelectorAll('.animated-item');
-    if (elmList && elmList.length > 0) {
-
-      for (let i = 0; i < elmList.length; i++) {
-        let elm = elmList[i] as HTMLElement;
-        if (AppUtilsService.isElementInViewPort(elm)) {
-          if (elm.className.indexOf('scale-in-center') === -1) {
-            elm.className += ' scale-in-center';
-            // setTimeout(() => {
-            //   elm.classList.remove('scale-in-center');
-            // }, 1000);
-          }
-        }
-      }
-    }
   }
 
   getClass(id, index: number) {
