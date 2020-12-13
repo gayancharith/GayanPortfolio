@@ -1,8 +1,8 @@
 <div class="site-sidenav" [ngClass]="{open: isOpen }">
-  <div class="handle" (click)="isOpen=!isOpen">
+  <div class="handle" (click)="openMenu($event)">
     <i class="fa fa-cog fa-spin"></i>
   </div>
-  <div class="nav-body">
+  <div class="nav-body" (click)="$event.stopPropagation()">
     <ul>
       <li class="nav-item" [ngClass]="{active:activatedRouteIndex===0}">
         <a class="nav-link" [routerLink]="['/home']" routerLinkActive="is-active"

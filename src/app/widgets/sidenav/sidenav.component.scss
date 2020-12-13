@@ -18,7 +18,7 @@
     display: flex;
     top: 10px;
     left: -33px;
-    background: $purple;
+    //background: $purple;
     cursor: pointer;
     padding: 10px 8px;
     border-top-left-radius: 4px;
@@ -42,11 +42,11 @@
       padding: 2rem;
       cursor: pointer;
       //color: $black;
-      border-bottom: 1px solid #555556;
+      //border-bottom: 1px solid #555556;
       display: flex;
       //justify-content: center;
       text-align: center;
-      background: $black;
+      background: $white;
 
       &:last-child
       {
@@ -69,7 +69,7 @@
 
     .nav-link {
       text-decoration: none;
-      color: $white;
+      color: $black;
 
       i {
         font-size: 32px;

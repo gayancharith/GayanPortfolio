@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewInit } from '@angular/core';
+import {Component, OnInit, AfterViewInit, HostListener} from '@angular/core';
 import { BreakpointObserverService } from 'src/app/services/utils/breakpoint-observer.service';
 import { Router } from '@angular/router';
 import { AppUtilsService } from 'src/app/services/utils/app-utils.service';
@@ -15,7 +15,9 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
   projects: Array<any>;
   overlayWidth: string;
   selectedProject;
-  flag: boolean = false;
+  @HostListener('document:click', ['$event']) onDocumentClick(event) {
+    this.hideProjectDetails();
+  }
 
   constructor(private router: Router, private breakPointService: BreakpointObserverService) { }
 
@@ -31,7 +33,8 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
     return longDesc ? longDesc.substring(0, 60) + '...' : '';
   }
 
-  showProjectDetails(project) {
+  showProjectDetails($event, project) {
+    $event.stopPropagation();
     this.overlayWidth = this.breakPointService.isMediumScreen ? '100%' : '50%';
     this.selectedProject = project;
   }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { BreakpointObserverService } from 'src/app/services/utils/breakpoint-observer.service';
+// import { BreakpointObserverService } from 'src/app/services/utils/breakpoint-observer.service';
 import { Router } from '@angular/router';
 
 @Component({
@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./skills.component.scss'],
 })
 export class SkillsComponent implements OnInit {
-  maxCount: number = 6; // how many number of progress circles per row. MEDIUM-4, LARGE-5
+  // maxCount: number = 6; // how many number of progress circles per row. MEDIUM-4, LARGE-5
   about: any = {};
   experiences: Array<any>;
   education: Array<any>;
@@ -16,11 +16,10 @@ export class SkillsComponent implements OnInit {
   backendSkills: Array<any> = [];
   tools: Array<any>;
 
-  showMoreProgramming: boolean = false;
-  showMoreTools: boolean = false;
+  // showMoreProgramming: boolean = false;
+  // showMoreTools: boolean = false;
 
-  constructor(private router: Router,
-    private breakpointService: BreakpointObserverService) {}
+  constructor(private router: Router) {}
 
   ngOnInit(): void {
     this.about = JSON.parse(sessionStorage.getItem('DATA')).about;
@@ -41,7 +40,7 @@ export class SkillsComponent implements OnInit {
 
   downloadCv() {
     const NAME = "Gayan-Witharana-CV";
-    const CV_PATH = "../../../assets/data/Gayan-Witharana-CV.pdf";
+    const CV_PATH = "assets/data/Gayan-Witharana-CV.pdf";
     let link = document.createElement("a");
     link.setAttribute('download', NAME);
     link.href = CV_PATH;

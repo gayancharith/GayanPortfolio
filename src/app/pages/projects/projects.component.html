@@ -32,7 +32,7 @@
               <div class="project-caption">
                 <h4>{{project?.name}}</h4>
                 <p>{{getShortDescription(project?.description)}}
-                  <a (click)="showProjectDetails(project)">Read More</a>
+                  <a (click)="showProjectDetails($event,project)">Read More</a>
                 </p>
               </div>
             </div>

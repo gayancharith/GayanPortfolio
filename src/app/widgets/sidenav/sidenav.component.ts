@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, HostListener, OnInit} from '@angular/core';
 import {ActivatedRoute, NavigationEnd, Router} from '@angular/router';
 
 @Component({
@@ -12,6 +12,10 @@ export class SidenavComponent implements OnInit {
   isOpen: boolean;
   activatedRouteIndex: number;
 
+  @HostListener('document:click', ['$event']) onDocumentClick(event) {
+    this.isOpen = false;
+  }
+
   constructor(private router: Router,
               private route: ActivatedRoute) {
     this.router.events.subscribe((event) => {
@@ -24,4 +28,8 @@ export class SidenavComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  openMenu($event) {
+    $event.stopPropagation();
+    this.isOpen = !this.isOpen;
+  }
 }

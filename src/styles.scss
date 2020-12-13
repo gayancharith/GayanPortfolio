@@ -7,8 +7,8 @@
 html,
 body {
   height: 100%;
-  background: $background-color;
-  color: $white;
+  //background: $background-color;
+  //color: $white;
   margin: 0;
   // font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   // font-family: "Rubik", sans-serif;
@@ -25,6 +25,7 @@ h6 {
   font-family: "AbrilTitlingW04";
   // font-family: "EsmeraldaPro";
   font-weight: 700;
+  color: $black;
 }
 
 button {
@@ -48,17 +49,17 @@ button {
 }
 
 .site-container {
-  background-color: $background-color;
+  //background-color: $background-color;
   height: 100%;
   padding: 6rem 10rem;
   // opacity: 0.8;
 
   @media only screen and (max-width: 1200px) and (min-width: 768px) {
-    padding: 6rem 5rem;
+    padding: 3rem;
   }
 
   @media (max-width: 736px) {
-    padding: 5rem 3rem;
+    padding: 3rem;
   }
 }
 
@@ -109,4 +110,8 @@ button {
 
 .special-heading-text {
   margin-left: 1rem;
+}
+
+.toast-container .ngx-toastr {
+  box-shadow: none;
 }
