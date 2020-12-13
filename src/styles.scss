@@ -115,3 +115,65 @@ button {
 .toast-container .ngx-toastr {
   box-shadow: none;
 }
+
+.toast-container {
+  .ngx-toastr {
+    color: $black;
+  }
+
+  .toast-success {
+    background-color: $white;
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .1), inset 0 2px 0 0 $success;
+    background-image: url('/assets/images/check.svg');
+
+    .toast-progress {
+      background: $success;
+    }
+
+    &:hover {
+      box-shadow: 0 4px 15px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .1), inset 0 2px 0 0 $success;
+    }
+  }
+
+  .toast-warning {
+    background-color: $white;
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .1), inset 0 2px 0 0 $warning;
+    background-image: url('/assets/images/exclamation.svg');
+
+    .toast-progress {
+      background: $warning;
+    }
+
+    &:hover {
+      box-shadow: 0 4px 15px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .1), inset 0 2px 0 0 $warning;
+    }
+  }
+
+  .toast-info {
+    background-color: $white;
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .1), inset 0 2px 0 0 $info;
+    background-image: url('/assets/images/info.svg');
+
+    .toast-progress {
+      background: $info;
+    }
+
+    &:hover {
+      box-shadow: 0 4px 15px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .1), inset 0 2px 0 0 $info;
+    }
+  }
+
+  .toast-error {
+    background-color: $white;
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .1), inset 0 2px 0 0 $danger;
+    background-image: url('/assets/images/close.svg');
+
+    .toast-progress {
+      background: $danger;
+    }
+
+    &:hover {
+      box-shadow: 0 4px 15px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .1), inset 0 2px 0 0 $danger;
+    }
+  }
+}

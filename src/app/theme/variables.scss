@@ -10,6 +10,15 @@ $green:           #68bb1a;
 $red:             #f44336;
 $blue:            #2197f3;
 $purple:          #800080;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
 
 $light-blue:      #2e3d62;
 $dark-blue:       #050116;
@@ -18,6 +27,13 @@ $background-color:  $white;
 $primary-color:   	$yellow;
 
 $special-text-color:  $primary-color;
+
+$primary:       $primary-color !default;
+$secondary:     $gray-600 !default;
+$success:       $green !default;
+$info:          $blue !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
 
 //fonts
 $font-size-large:     1.125rem; //18px
