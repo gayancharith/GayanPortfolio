@@ -11,6 +11,14 @@
             Development</span> </p>
         <p class="mt-4">{{about?.descriptionMore}}</p>
 
+        <div class="social-icons mt-5">
+          <a class="linkedin" href="https://www.linkedin.com/in/gayanwitharana/" target="_blank" title="linkedin"><img alt="social" src="assets/images/linkedin.png"></a>
+          <a class="github" href="https://github.com/gayancharith" target="_blank" title="github"><img alt="social" src="assets/images/github.png"></a>
+          <a class="stackoverflow" href="https://stackoverflow.com/users/2249992/gayan-charith" target="_blank" title="stackoverflow"><img alt="social" src="assets/images/stack-overflow.png"></a>
+          <a class="facebook" href="https://www.facebook.com/gayancharith.witharana/" target="_blank" title="facebook"><img alt="social" src="assets/images/facebook.png"></a>
+          <a class="instagram" href="https://www.instagram.com/gayancharith89/" target="_blank" title="instagram"><img alt="social" src="assets/images/instagram.png"></a>
+        </div>
+
         <div class="mt-5 button-section">
           <site-button [text]="'Download CV'" (clickEvent)="downloadCv()"></site-button>
           <site-button [text]="'Portfolio'" [showIcon]="true" (clickEvent)="handleButtonClick('/projects')">
@@ -18,15 +26,6 @@
         </div>
 
         <div class="personal-info">
-          <div class="social-icons mt-5">
-            <h4 class="site-sub-heading">Connect Me</h4>
-            <a href="https://www.facebook.com/gayancharith.witharana/" target="_blank" title="facebook"><i class="fa fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/gayancharith89/" target="_blank" title="instagram"><i class="fa fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/gayanwitharana/" target="_blank" title="linkedin"><i class="fa fa-linkedin"></i></a>
-            <a href="https://stackoverflow.com/users/2249992/gayan-charith" target="_blank" title="stackoverflow"><i
-                class="fa fa-stack-overflow"></i></a>
-            <a href="https://github.com/gayancharith" target="_blank" title="github"><i class="fa fa-github"></i></a>
-          </div>
           <div class="interests mt-5">
             <div class="site-sub-heading">
               <h3>My Interests</h3>
@@ -36,7 +35,6 @@
               <span class="col-6 mb-4"><i class="fa fa-suitcase mr-3"></i>Travelling</span>
               <span class="col-6 mb-4"><i class="fa fa-film mr-3"></i>Movies</span>
               <span class="col-6 mb-4"><i class="fa fa-code mr-3"></i>Coding</span>
-<!--              <span class="col-6 mb-4"><i class="fa fa-laptop mr-3"></i>Freelancing</span>-->
             </div>
           </div>
         </div>

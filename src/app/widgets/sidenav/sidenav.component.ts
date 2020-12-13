@@ -7,9 +7,7 @@ import {ActivatedRoute, NavigationEnd, Router} from '@angular/router';
   styleUrls: ['./sidenav.component.scss']
 })
 export class SidenavComponent implements OnInit {
-  // showToggleMenu: boolean = false;
-  // toggleMenuOpacity: number = 0;
-  isOpen: boolean;
+  isOpen: boolean = true;
   activatedRouteIndex: number;
 
   @HostListener('document:click', ['$event']) onDocumentClick(event) {
