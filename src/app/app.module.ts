@@ -1,11 +1,10 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HttpClientModule } from '@angular/common/http';
-import { AppRoutingModule } from './app-routing.module';
-import { SidenavModule } from './widgets/sidenav/sidenav.module';
-import { HeaderModule } from './widgets/header/header.module';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {AppComponent} from './app.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {HttpClientModule} from '@angular/common/http';
+import {AppRoutingModule} from './app-routing.module';
+import {SidenavModule} from './widgets/sidenav/sidenav.module';
 import {ToastrModule} from 'ngx-toastr';
 
 @NgModule({
@@ -16,10 +15,10 @@ import {ToastrModule} from 'ngx-toastr';
     AppRoutingModule,
     HttpClientModule,
     SidenavModule,
-    HeaderModule,
     ToastrModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule {
+}

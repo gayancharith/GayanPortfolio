@@ -1,5 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { AppUtilsService } from 'src/app/services/utils/app-utils.service';
+import {Component, OnInit, Input} from '@angular/core';
+import {AppUtilsService} from 'src/app/services/utils/app-utils.service';
 
 @Component({
   selector: 'site-progress-circle',
@@ -18,9 +18,11 @@ export class ProgressCircleComponent implements OnInit {
 
   strokeDashArray: string;
 
-  constructor() {}
+  constructor() {
+  }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+  }
 
   /* Add progress circle animation, when it comes to view port and
   remove the animation when it's not in view port. */

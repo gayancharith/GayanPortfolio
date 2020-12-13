@@ -10,10 +10,6 @@ import {ToastrService} from 'ngx-toastr';
 })
 export class ContactComponent implements OnInit {
   contactDetails: any = {};
-  // name: string;
-  // email: string;
-  // subject: string;
-  // description: string;
   form: FormGroup;
 
   constructor(private fb: FormBuilder,
@@ -34,7 +30,6 @@ export class ContactComponent implements OnInit {
   sendMessage() {
     if (this.form.valid) {
       this.emailService.sendMessage(this.form.value).subscribe(res => {
-        console.log(res);
         this.form.reset();
         this.toastr.success('Your message has been sent successfully.', '');
       }, error => {

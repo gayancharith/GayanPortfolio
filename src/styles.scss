@@ -7,11 +7,7 @@
 html,
 body {
   height: 100%;
-  //background: $background-color;
-  //color: $white;
   margin: 0;
-  // font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  // font-family: "Rubik", sans-serif;
   font-family: "Biotif", Arial, sans-serif;
   @include scrollbars(2px, $gray, $black);
 }
@@ -22,8 +18,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "AbrilTitlingW04";
-  // font-family: "EsmeraldaPro";
+  font-family: "AbrilTitlingW04", serif;
   font-weight: 700;
   color: $black;
 }
@@ -49,10 +44,8 @@ button {
 }
 
 .site-container {
-  //background-color: $background-color;
   height: 100%;
   padding: 6rem 10rem;
-  // opacity: 0.8;
 
   @media only screen and (max-width: 1200px) and (min-width: 768px) {
     padding: 3rem;

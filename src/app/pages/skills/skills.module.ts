@@ -1,10 +1,9 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { SkillsComponent } from './skills.component';
-import { SkillsRoutingModule } from './skills-routing.module';
-import { ProgressCircleModule } from 'src/app/widgets/progress-circle/progress-circle.module';
-import { HeadingModule } from '../../widgets/heading/heading.module';
-import { ButtonModule } from 'src/app/widgets/button/button.module';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {SkillsComponent} from './skills.component';
+import {SkillsRoutingModule} from './skills-routing.module';
+import {ProgressCircleModule} from 'src/app/widgets/progress-circle/progress-circle.module';
+import {ButtonModule} from 'src/app/widgets/button/button.module';
 
 @NgModule({
   declarations: [SkillsComponent],
@@ -12,8 +11,8 @@ import { ButtonModule } from 'src/app/widgets/button/button.module';
     CommonModule,
     SkillsRoutingModule,
     ProgressCircleModule,
-    HeadingModule,
     ButtonModule
   ],
 })
-export class SkillsModule {}
+export class SkillsModule {
+}

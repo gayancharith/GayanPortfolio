@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import {Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'site-button',
@@ -13,11 +13,13 @@ export class ButtonComponent implements OnInit {
 
   @Output() clickEvent = new EventEmitter<any>();
 
-  constructor() {}
+  constructor() {
+  }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+  }
 
-  emitClickEvent(event){
+  emitClickEvent(event) {
     event.stopPropagation();
     this.clickEvent.emit();
   }

@@ -1,7 +1,7 @@
 import {Component, OnInit, AfterViewInit, HostListener} from '@angular/core';
-import { BreakpointObserverService } from 'src/app/services/utils/breakpoint-observer.service';
-import { Router } from '@angular/router';
-import { AppUtilsService } from 'src/app/services/utils/app-utils.service';
+import {BreakpointObserverService} from 'src/app/services/utils/breakpoint-observer.service';
+import {Router} from '@angular/router';
+import {AppUtilsService} from 'src/app/services/utils/app-utils.service';
 
 @Component({
   selector: 'app-projects',
@@ -15,11 +15,13 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
   projects: Array<any>;
   overlayWidth: string;
   selectedProject;
+
   @HostListener('document:click', ['$event']) onDocumentClick(event) {
     this.hideProjectDetails();
   }
 
-  constructor(private router: Router, private breakPointService: BreakpointObserverService) { }
+  constructor(private router: Router, private breakPointService: BreakpointObserverService) {
+  }
 
   ngAfterViewInit(): void {
     // this.addAnimation();

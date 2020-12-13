@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import {Component, OnInit} from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -9,7 +9,8 @@ import { Router } from '@angular/router';
 export class HomeComponent implements OnInit {
   about: any = {};
 
-  constructor(private router: Router) {}
+  constructor(private router: Router) {
+  }
 
   ngOnInit(): void {
     this.about = JSON.parse(sessionStorage.getItem('DATA')).about;

@@ -12,6 +12,7 @@
 .site-projects {
   .nav-tabs {
     border: 0;
+
     .nav-link {
       color: #222222;
       letter-spacing: 2px;
@@ -94,6 +95,7 @@
       opacity: 0.9;
       visibility: visible;
     }
+
     .project-caption {
       transform: translateY(-102%);
       opacity: 1;
@@ -110,7 +112,6 @@
   right: 0;
   top: 0;
   color: $white;
-  //background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.9);
   overflow-x: hidden;
   transition: 0.5s;
@@ -122,9 +123,7 @@
     padding: 2rem;
 
     h3 {
-      text-align: center;
       color: $primary-color;
-      letter-spacing: 4px;
       margin-bottom: 2rem;
 
       @media (max-width: 768px) {
@@ -135,7 +134,6 @@
     ul {
       list-style: none;
       padding-left: 0;
-      letter-spacing: 2px;
     }
 
     li {
