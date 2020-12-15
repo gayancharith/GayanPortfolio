@@ -170,3 +170,19 @@ button {
     }
   }
 }
+
+.social-icons {
+  a {
+    margin-right: 1rem;
+
+    &:hover {
+      color: unset;
+      text-decoration: none;
+    }
+  }
+
+  i {
+    font-size: 20px;
+    font-weight: 700;
+  }
+}
