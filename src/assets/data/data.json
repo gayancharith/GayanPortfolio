@@ -5,15 +5,22 @@
     "mobile": "+6035532399",
     "email": "vgayancharith@gmail.com",
     "profession": "Senior Front-End Developer",
-    "description": "I'm a Experienced Senior Software Engineer with a Bachelor of Computer Science, currently working at a well reputed company in Malaysia who has more than 6 years of working history in computer software industry. I am a person with a passion for developing innovative systems that accelerates the efficiency and effectiveness of organizational success.",
-    "descriptionMore": "I'm a Experienced Senior Software Engineer with a Bachelor of Computer Science, currently working at a well reputed company in Malaysia who has more than 6 years of working history in computer software industry. I am a person with a passion for developing innovative systems that accelerates the efficiency and effectiveness of organizational success."
+    "description": "I'm a Experienced Front-End Engineer with a Bachelor of Computer Science, currently working at a well reputed company in Sweden who has more than 7 years of working history in computer software industry. I am a person with a passion for developing innovative systems that accelerates the efficiency and effectiveness of organizational success.",
+    "descriptionMore": "I'm a Experienced Front-End Engineer with a Bachelor of Computer Science, currently working at a well reputed company in Sweden remotely, who has more than 7 years of working history in computer software industry. I am a person with a passion for developing innovative systems that accelerates the efficiency and effectiveness of organizational success."
   },
   "experiences": [
     {
+      "designation": "Senior Front-End Engineer",
+      "company": "Lucytech / Fishbrain",
+      "year": "Aug 2020 - Present",
+      "duration": "Aug 2021 - Present",
+      "description": "Collaborate with all the stages of software development process."
+    },
+    {
       "designation": "Senior Front-End Developer",
       "company": "Archisoft Global Sdn Bhd. (Pvt) Ltd",
-      "year": "2020 Present",
-      "duration": "2020 - Present",
+      "year": "Feb 2020 - Aug 2021",
+      "duration": "Feb 2020 - Present",
       "description": "Collaborate with all the stages of software development process."
     },
     {
