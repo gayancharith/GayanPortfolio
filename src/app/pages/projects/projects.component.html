@@ -1,39 +1,63 @@
-<section *ngIf="projects && projects.length>0" id="blog" class="site-projects">
+<section *ngIf="projects && projects.length > 0" id="blog" class="site-projects">
   <div class="site-container">
     <div class="row">
       <div class="col-lg-7">
         <h2 class="site-heading">
-          <span class="heading-transparent">Let's create</span>
-          <span class="heading-color"> dream</span><br> projects
+          <span class="heading-transparent">Projects</span>
+          <!-- <span class="heading-color"> dream</span><br> projects -->
         </h2>
-        <p class="site-special-heading"><span class="special-heading-indicator"></span> <span
-          class="special-heading-text">Some of my awesome stuffs here. <span class="special-text">think outside of the box</span></span>
+        <p class="site-special-heading">
+          <span class="special-heading-indicator"></span>
+          <span class="special-heading-text"
+            >Some of my awesome stuffs here.
+            <span class="special-text">think outside of the box</span></span
+          >
+        </p>
       </div>
-      <div class="col-lg-3 d-lg-block d-none button-wrapper">
+
+      <!-- <div class="col-lg-3 d-lg-block d-none button-wrapper">
         <site-button [text]="'Contact Me'" [showIcon]="true" (clickEvent)="handleButtonClick('/contact')"></site-button>
-      </div>
+      </div> -->
     </div>
 
     <ul class="nav nav-tabs justify-content-end mb-3">
-      <li class="nav-item" *ngFor="let p of projects; index as i;">
-        <a class="nav-link" [ngClass]="{'active': i===0}" data-toggle="tab" href="#{{p?.type}}">{{p?.decsription}}</a>
+      <li class="nav-item" *ngFor="let p of projects; index as i">
+        <a
+          class="nav-link"
+          [ngClass]="{ active: i === 0 }"
+          data-toggle="tab"
+          href="#{{ p?.type }}"
+          >{{ p?.decsription }}</a
+        >
       </li>
     </ul>
 
     <!-- Tab panes -->
     <div class="tab-content">
-      <div class="tab-pane" [ngClass]="{'active': i===0 }" *ngFor="let p of projects; index as i;"
-           [id]="p?.type">
-        <div *ngIf="p.projects && p.projects.length>0" class="row">
-          <div class="col-lg-4 col-md-6 p-1" *ngFor="let project of p.projects; index as j;">
-            <div class="project-item" [id]="p?.type +'-project-item-'+j"
-                 [ngClass]="getClass(p?.type +'-project-item-'+j, j)">
-              <div class="project-img"
-                   [ngStyle]="{'background-image': 'url(assets/images/projects/'+ project?.imgUrl + ')'}"></div>
+      <div
+        class="tab-pane"
+        [ngClass]="{ active: i === 0 }"
+        *ngFor="let p of projects; index as i"
+        [id]="p?.type"
+      >
+        <div *ngIf="p.projects && p.projects.length > 0" class="row">
+          <div class="col-lg-4 col-md-6 p-1" *ngFor="let project of p.projects; index as j">
+            <div
+              class="project-item"
+              [id]="p?.type + '-project-item-' + j"
+              [ngClass]="getClass(p?.type + '-project-item-' + j, j)"
+            >
+              <div
+                class="project-img"
+                [ngStyle]="{
+                  'background-image': 'url(assets/images/projects/' + project?.imgUrl + ')'
+                }"
+              ></div>
               <div class="project-caption">
-                <h4>{{project?.name}}</h4>
-                <p>{{getShortDescription(project?.description)}}
-                  <a (click)="showProjectDetails($event,project)">Read More</a>
+                <h4>{{ project?.name }}</h4>
+                <p>
+                  {{ getShortDescription(project?.description) }}
+                  <a (click)="showProjectDetails($event, project)">Read More</a>
                 </p>
               </div>
             </div>
@@ -43,8 +67,11 @@
     </div>
 
     <!-- Project Detail Overlay -->
-    <div class="project-detail-overlay" [ngStyle]="{'width': overlayWidth}" (click)="$event.stopPropagation()">
-
+    <div
+      class="project-detail-overlay"
+      [ngStyle]="{ width: overlayWidth }"
+      (click)="$event.stopPropagation()"
+    >
       <!-- Button to close the project detail overlay -->
       <a class="close-btn" (click)="hideProjectDetails()" title="Close">
         <i class="fa fa-close"></i>
@@ -52,29 +79,39 @@
 
       <!-- Overlay content -->
       <div class="overlay-content container">
-        <h3>{{selectedProject?.name}}</h3>
+        <h3>{{ selectedProject?.name }}</h3>
         <ul *ngIf="selectedProject?.properties && selectedProject.properties.length > 0">
-          <li *ngFor="let property of selectedProject.properties; index as i;">
-            <span class="label">{{property?.label}}: </span>
-            <span *ngIf="property?.label.toLowerCase()!=='url'" class="value">{{property?.value}}</span>
-            <a *ngIf="property?.label.toLowerCase()==='url'" [href]="property?.value"
-               target="_blank">{{property?.value}}</a>
+          <li *ngFor="let property of selectedProject.properties; index as i">
+            <span class="label">{{ property?.label }}: </span>
+            <span *ngIf="property?.label.toLowerCase() !== 'url'" class="value">{{
+              property?.value
+            }}</span>
+            <a
+              *ngIf="property?.label.toLowerCase() === 'url'"
+              [href]="property?.value"
+              target="_blank"
+              >{{ property?.value }}</a
+            >
           </li>
         </ul>
-        <p>{{selectedProject?.description}}</p>
+        <p>{{ selectedProject?.description }}</p>
       </div>
     </div>
 
-    <div class="row mt-5">
+    <!-- <div class="row mt-5">
       <div class="col-12">
         <div class="contact-link text-center">
-          <p class="site-special-heading"><span class="special-heading-indicator"></span> <span
-            class="special-heading-text">Need any project don't feel nervous say hello
-              or</span>
-            <a [routerLink]="['/contact']" class="special-text"> Contact Me <i class="fa fa-long-arrow-right"></i></a>
+          <p class="site-special-heading">
+            <span class="special-heading-indicator"></span>
+            <span class="special-heading-text"
+              >Need any project don't feel nervous say hello or</span
+            >
+            <a [routerLink]="['/contact']" class="special-text">
+              Contact Me <i class="fa fa-long-arrow-right"></i
+            ></a>
           </p>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </section>

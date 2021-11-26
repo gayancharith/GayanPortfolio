@@ -1,33 +1,48 @@
-<div class="site-sidenav" [ngClass]="{open: isOpen }">
+<div class="site-sidenav" [ngClass]="{ open: isOpen }">
   <div class="handle" (click)="openMenu($event)">
     <i class="fa fa-cog fa-spin"></i>
   </div>
   <div class="nav-body" (click)="$event.stopPropagation()">
     <ul>
-      <li class="nav-item" [ngClass]="{active:activatedRouteIndex===0}">
-        <a class="nav-link" [routerLink]="['/home']" routerLinkActive="is-active"
-           [routerLinkActiveOptions]="{ exact: true }"><i class="fa fa-home"></i>Home </a>
+      <li class="nav-item" [ngClass]="{ active: activatedRouteIndex === 0 }">
+        <a
+          class="nav-link"
+          [routerLink]="['/home']"
+          routerLinkActive="is-active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          ><i class="fa fa-home"></i>Home
+        </a>
         <div class="triangle"></div>
       </li>
-      <li class="nav-item" [ngClass]="{active:activatedRouteIndex===1}">
-        <a class="nav-link" [routerLink]="['/skills']" routerLinkActive="is-active"
-           [routerLinkActiveOptions]="{ exact: true }"><i class="fa fa-tasks"></i>Resume</a>
+      <li class="nav-item" [ngClass]="{ active: activatedRouteIndex === 1 }">
+        <a
+          class="nav-link"
+          [routerLink]="['/skills']"
+          routerLinkActive="is-active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          ><i class="fa fa-tasks"></i>Resume</a
+        >
         <div class="triangle"></div>
       </li>
-      <li class="nav-item" [ngClass]="{active:activatedRouteIndex===2}">
-        <a class="nav-link" [routerLink]="['/projects']" routerLinkActive="is-active"
-           [routerLinkActiveOptions]="{ exact: true }"><i class="fa fa-puzzle-piece"></i>Portfolio</a>
+      <li class="nav-item" [ngClass]="{ active: activatedRouteIndex === 2 }">
+        <a
+          class="nav-link"
+          [routerLink]="['/projects']"
+          routerLinkActive="is-active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          ><i class="fa fa-puzzle-piece"></i>Portfolio</a
+        >
         <div class="triangle"></div>
       </li>
       <!-- <li class="nav-item">
         <a class="nav-link" [routerLink]="['/blog']" routerLinkActive="is-active"
           [routerLinkActiveOptions]="{ exact: true }"><i class="fa fa-comments"></i>Blog</a>
       </li> -->
-      <li class="nav-item" [ngClass]="{active:activatedRouteIndex===4}">
+      <!-- <li class="nav-item" [ngClass]="{active:activatedRouteIndex===4}">
         <a class="nav-link" [routerLink]="['/contact']" routerLinkActive="is-active"
            [routerLinkActiveOptions]="{ exact: true }"><i class="fa fa-phone"></i>Contact</a>
         <div class="triangle"></div>
-      </li>
+      </li> -->
     </ul>
   </div>
 </div>

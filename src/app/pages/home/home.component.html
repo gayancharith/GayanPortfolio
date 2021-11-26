@@ -7,24 +7,55 @@
     <div class="col-lg-8 p-5 overlay-content slide-in-bottom">
       <div class="overlay-heading">
         <h4 class="special-text">Hi, I am</h4>
-        <h1>{{about?.name}}</h1>
-        <h5 class="special-text">{{about?.profession}}</h5>
+        <h1>{{ about?.name }}</h1>
+        <h5 class="special-text">{{ about?.profession }}</h5>
       </div>
 
-      <p class="mt-4">{{about?.description}}</p>
+      <p class="mt-4">{{ about?.description }}</p>
 
       <div class="social-icons">
-        <a class="linkedin" href="https://www.linkedin.com/in/gayanwitharana/" target="_blank" title="linkedin"><img alt="social" src="assets/images/linkedin.png"></a>
-        <a class="github" href="https://github.com/gayancharith" target="_blank" title="github"><img alt="social" src="assets/images/github.png"></a>
-        <a class="stackoverflow" href="https://stackoverflow.com/users/2249992/gayan-charith" target="_blank" title="stackoverflow"><img alt="social" src="assets/images/stack-overflow.png"></a>
-        <a class="facebook" href="https://www.facebook.com/gayancharith.witharana/" target="_blank" title="facebook"><img alt="social" src="assets/images/facebook.png"></a>
-        <a class="instagram" href="https://www.instagram.com/gayancharith89/" target="_blank" title="instagram"><img alt="social" src="assets/images/instagram.png"></a>
+        <a
+          class="linkedin"
+          href="https://www.linkedin.com/in/gayanwitharana/"
+          target="_blank"
+          title="linkedin"
+          ><img alt="social" src="assets/images/linkedin.png"
+        /></a>
+        <a class="github" href="https://github.com/gayancharith" target="_blank" title="github"
+          ><img alt="social" src="assets/images/github.png"
+        /></a>
+        <a
+          class="stackoverflow"
+          href="https://stackoverflow.com/users/2249992/gayan-charith"
+          target="_blank"
+          title="stackoverflow"
+          ><img alt="social" src="assets/images/stack-overflow.png"
+        /></a>
+        <a
+          class="facebook"
+          href="https://www.facebook.com/gayancharith.witharana/"
+          target="_blank"
+          title="facebook"
+          ><img alt="social" src="assets/images/facebook.png"
+        /></a>
+        <a
+          class="instagram"
+          href="https://www.instagram.com/gayancharith89/"
+          target="_blank"
+          title="instagram"
+          ><img alt="social" src="assets/images/instagram.png"
+        /></a>
       </div>
 
       <div class="my-5 overlay-footer">
-        <site-button [text]="'Discover More'" [showIcon]="true" [fill]="true" (clickEvent)="handleButtonClick('/skills')">
+        <site-button
+          [text]="'Discover More'"
+          [showIcon]="true"
+          [fill]="true"
+          (clickEvent)="handleButtonClick('/skills')"
+        >
         </site-button>
-        <site-button [text]="'Contact Me'" [showIcon]="true" (clickEvent)="handleButtonClick('/contact')"></site-button>
+        <!-- <site-button [text]="'Contact Me'" [showIcon]="true" (clickEvent)="handleButtonClick('/contact')"></site-button> -->
       </div>
     </div>
   </div>
